@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.elevator {
+  position: relative;
+}
+
+.floor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+#ground {
+  order: 3; /* Set order to place it at the bottom */
+}
+
+#level1 {
+  order: 2; /* Set order to place it above ground */
+}
+
+#level2 {
+  order: 1; /* Set order to place it at the top */
+}
+
+.elevator-door {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 100px;
+  background-color: #3498db;
+}

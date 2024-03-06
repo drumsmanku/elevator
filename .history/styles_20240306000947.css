@@ -1,0 +1,23 @@
+#building {
+  display: flex;
+  flex-direction: column-reverse; /* Ground level at the bottom */
+  height: 600px; /* Adjust based on total height */
+}
+
+.floor {
+  flex: 1;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#elevator {
+  width: 60px;
+  height: 60px;
+  background-color: grey;
+  position: absolute;
+  bottom: 0; /* Starts at ground level */
+  transition: bottom 5s; /* Smooth transition for movement */
+}

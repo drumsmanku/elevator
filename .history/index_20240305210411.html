@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Elevator Control System</title>
+</head>
+<body>
+    <div class="elevator">
+        <div class="floor" id="ground">
+            <button onclick="requestUp('ground')">Up</button>
+        </div>
+        <div class="floor" id="level1">
+            <button onclick="requestUp('level1')">Up</button>
+            <button onclick="requestDown('level1')">Down</button>
+        </div>
+        <div class="floor" id="level2">
+            <button onclick="requestDown('level2')">Down</button>
+        </div>
+        <div class="elevator-door"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

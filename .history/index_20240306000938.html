@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elevator Simulation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="building">
+        <div class="floor" id="level2">Level 2 <button onclick="requestElevator(2, 'down')">Down</button></div>
+        <div class="floor" id="level1">Level 1 <button onclick="requestElevator(1, 'up')">Up</button> <button onclick="requestElevator(1, 'down')">Down</button></div>
+        <div class="floor" id="ground">Ground Level <button onclick="requestElevator(0, 'up')">Up</button></div>
+        <div id="elevator"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+#building {
+  display: flex;
+  flex-direction: column-reverse; /* This is crucial for the floors to be stacked correctly: Ground at bottom, Level 2 at top */
+  align-items: center;
+  position: relative;
+  height: 310px; /* Adjust based on the total height of all floors and spacing */
+}
+
+.floor {
+  border: 2px solid black;
+  width: 120px; /* Adjust based on your design preference */
+  height: 100px; /* Adjust based on your design preference */
+  margin: 5px 0; /* Adjust spacing between floors */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Necessary for correct button positioning */
+}
+
+#elevator {
+  position: absolute;
+  bottom: 0; /* Start at Ground level */
+  width: 60px; /* Adjust based on your design preference */
+  height: 60px; /* Adjust based on your design preference */
+  background-color: transparent; /* Initially, the elevator is represented without a fill color */
+  border: 2px solid gray; /* Gives the elevator a distinct look */
+  transition: bottom 5s linear; /* Smooth transition for moving between floors */
+}
